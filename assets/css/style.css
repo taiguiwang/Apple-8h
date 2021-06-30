@@ -1,0 +1,804 @@
+/*重置CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************************头部导航栏*****************************/
+body {
+    margin: 0;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.dhl {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+
+.dhl>a {
+	font-size: 13px;
+	font-weight: 100;
+    margin: auto;
+}
+
+.dhl>img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 30px;
+    margin: auto;
+}
+
+/**********************导航栏响应式的隐藏内容**********************/
+.narrow a{
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.narrow{
+	display: none;
+	background-color: black;
+}
+
+.upper-bar {
+    position: relative;
+    top: -3px;
+}
+
+.lower-bar {
+    position: relative;
+    bottom: -3px;
+}
+
+.narrow .bar {
+    display: block;
+    width: 18px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    transform-origin: 75% 0;
+    transition: transform 1s;
+    margin: 7px 0 -5px 18px;
+}
+
+.active .upper-bar {
+    transform: rotate(-60deg);
+}
+
+.active .lower-bar {
+    transform: rotate(60deg);
+}
+
+.tu-img {
+	display: flex;
+}
+.tu-img a {
+	margin: -10px 0 0 195px;
+}
+.ax {
+    margin: auto;
+}
+
+.input {
+    display: block;
+    margin: 30px 0px 0 30px;
+}
+
+::placeholder {
+    color:rgb(90, 90, 90);
+}
+
+#shuru {
+    width: 455px;
+    height: 30px;
+    outline: none;
+    border:none;
+    border-radius: 7px;
+    background-color: rgb(34, 34, 34);
+}
+
+.menu-body {
+    position: absolute;
+    top:20px;
+    left: -17px;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+    background-color:black;
+}
+
+.active .menu-body {
+    height: 100vh;
+}
+
+.menu-body {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+ul>li{
+    list-style-type:none;
+    color: #c0c0c0;
+    font-size: 16px;
+    margin: 0 0 0 50px;
+}
+
+.FGX {
+    border: 0px;
+    width: 500px;
+    margin: 13px 0px 13px 0;
+    border-bottom: 1px solid #747474;
+}
+
+.B-FGX {
+    border: 0px;
+    width: 380px;
+    margin: 13px 0px 13px 50px;
+    border-bottom: 1px solid #747474;
+}
+/*响应式*/
+@media only screen and (max-width:500px){
+	.narrow{
+		display: flex;
+	}
+
+	.dhl{
+		display: none;
+	}
+}
+
+/*************************购物袋点击事件**********************/
+.dhl img {
+    cursor: pointer;
+}
+.goWuDai {
+    margin: 10px 0 0 1100px;
+    color:#807f7f;
+}
+
+#x {
+    position: absolute;
+    margin-right: 120px;
+    font-size: 13px;
+    border-style: solid;
+    border-width: 45px;
+    border-color: #ffffff;
+    background-color: white;
+    border-radius: 8%;
+}
+
+ul>li {
+    color: #0066cc;
+    font-size: 13px;
+    margin: 10px 0 0 8px;
+}
+.p-text {
+    margin-left: 39px;
+}
+
+.gou-xian {
+    border: 0px;
+    width: 200px;
+    margin: 13px 0px 13px 0;
+    border-bottom: 1px solid #d8d5d5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*logo和输入框*/
+.welcome {
+    display: flex;
+    justify-content: center;
+    height: 530px;
+    background: url("https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/hero-banner-baker-homepage.image.large_2x.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-top: -10px;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    margin: 70px 0 30px 76px;
+}
+
+.welcome input {
+    border: 1px solid #dedede;
+    font-size: 20px;
+    outline: none;
+}
+
+.welcome ::placeholder {
+    color:#cfcfcf;
+    font-weight: 200;
+}
+
+/*手机、电脑、音乐等*/
+.products{
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+}
+
+.product-item img{
+    display: block;
+    width: 68px;
+    height: 68px;
+    padding-bottom: 16px;
+}
+
+.product-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:65px 0 65px 130px;
+}
+
+/*线*/
+.fenGX {
+    border: 0;
+    height: 0;
+    margin: 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.banFenGX {
+    border: 0;
+    height: 0;
+    margin: 0 268px 0 268px;
+    border-bottom: 1px solid #dedede;
+}
+
+
+
+/*ID、Apple维修、订阅*/
+.zixun {
+    display:flex;
+    justify-content: center;
+    margin: 50px 0 50px -240px;
+}
+
+.zixun img {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+.zixun div {
+    margin-left: 200px;
+}
+
+.zixun div a {
+    display: flex;
+    color: #0070c9;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    margin: 10px 0 0 0;
+}
+
+/*HomePod*/
+.liao-li{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+}
+
+.liao-img {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+.liao-text {
+    width: 400px;
+    display: block;
+    justify-content: center;
+    margin:60px 0 0 0;
+}
+
+
+/*HomePod字体设置*/
+.liao-text h2{
+    font-size: 40px;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:#333333;
+    font-weight: 300;
+}
+
+.liao-text p {
+    font-size: 22px;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:#333333;
+    margin-top: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.liao-text a {
+    font-size: 22px;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:#0070c9;
+    font-weight: 100;
+}
+
+/*与苹果进行交易*/
+.pingguojiaoyi{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+}
+
+.pingguojiaoyi-img {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+.pingguojiaoyi-text {
+    width: 410px;
+    display: block;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.pingguojiaoyi-text h2{
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 38px;
+    letter-spacing: .008em;
+    color:#333333;
+    font-weight: 400;
+    margin-top:10px;
+}
+
+.pingguojiaoyi-text p{
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 20px;
+    letter-spacing: .008em;
+    color:#333333;
+    font-weight: 300;/*字体粗细*/
+    margin-top: 8px;
+    line-height:30px;
+}
+
+.pingguojiaoyi-text a{
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 22px;
+    letter-spacing: .008em;
+    color:#0070c9;
+}
+
+/*得到支持*/
+.bjt {
+    background: url("https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp-hero-banner-getsupport.image.large_2x.jpg");
+    display: block;
+    justify-content: center;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.dedaozhichi {
+    color:white;
+    position: absolute;
+    margin:100px 0 0 275px;
+}
+
+.dedaozhichi h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.dedaozhichi p{
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.dedaozhichi a {
+    font-size: 17px;
+    color:#0070c9;
+}
+
+/*苹果专家*/
+.pingguozhuanjia {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.pgzj-img {
+    display: flex;
+    justify-content: center;
+}
+
+/*设置苹果专家文字字体颜色*/
+.pgzj-text {
+    display: block;
+    justify-content: center;
+    width: 430px;
+}
+
+.pgzj-text h2 {
+    font-size: 32px;
+    color: #333333;
+    letter-spacing: .008em;
+    font-weight: 300;
+    margin-top: 60px;
+}
+
+.pgzj-text p {
+    font-size: 17px;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.pgzj-text a {
+    font-size: 17px;
+    color: #0070c9;
+}
+
+/*有问题*/
+.wenti {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.wenti-text {
+    display: block;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.wenti-img {
+    display: flex;
+    justify-content: center;
+}
+
+.wenti-text h2 {
+    font-size: 32px;
+    color:#333333;
+}
+
+.wenti-text p {
+    font-size: 17px;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.wenti-text a {
+    font-size: 17px;
+    color: #0070c9;
+}
+
+/*假冒零件*/
+.jiamao {
+    display: flex;
+    text-align: center;
+    width: 770px;
+    margin: 0 0 0 380px;
+}
+
+.jiamao-text {
+    margin: 50px 0px 20px 0px;
+}
+
+.jiamao-text h2 {
+    font-size: 22px;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.jiamao-text p {
+    font-size: 17px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.jiamao-text a{
+    color:#0070c9;
+}
+
+/*保护Apple*/
+.baohu {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.bh-text {
+    display: block;
+    justify-content: center;
+    width: 480px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.bh-img {
+    display: flex;
+    justify-content: center;
+}
+
+/*服务和政策*/
+.fuwu-ZC {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 50px 0;
+}
+
+.FU-ZC {
+    display: block;
+    text-align: center;
+}
+
+.FU-ZC h3 {
+    font-size: 22px;
+    color:#333333;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.FU-ZC a {
+    font-size: 15px;
+    color:#0070c9;
+    font-weight: 500;
+}
+
+/*有关苹果及意外关机的信息*/
+.youguan {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 50px 0;
+}
+
+.youguan-text {
+    display: block;
+    text-align: center;
+}
+
+.youguan-text h2 {
+    font-size: 38px;
+    color:#333333;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.youguan-text a {
+    font-size: 15px;
+    color:#0070c9;
+    font-weight: 500;
+}
+
+/*苹果服务程序*/
+.CHENGXU {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 40px;
+}
+
+.chengxu {
+    display: block;
+    margin:30px 200px 30px 0;
+}
+
+.chengxu h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color:#333333;
+}
+
+.chengxu p{
+    font-size: 15px;
+    color:#0070c9;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.chengxu a {
+    font-size: 15px;
+    color:#0070c9;
+}
+
+/*与苹果保持联系*/
+.tail {
+    background-color: #f2f2f2f2;
+}
+.lianxi {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 25px 0;
+}
+
+.lianxi-text {
+    font-size: 12px;
+    color:#333333;
+}
+
+.lianxi-img {
+    margin: 0 0 0 40px;
+}
+.li-text {
+    margin: 25px 0 0 0;
+}
+
+/*底部的产品支持、服务与维修、资源、网络*/
+/*第一部分*/
+.bottom-ZC {
+    display: flex;
+    margin: 0 0 0 266px;
+}
+
+.bottom-ZC p {
+    font-size: 12px;
+    color:#555555;
+}
+
+.fu {
+    font-size: 20px;
+    color:#555555;
+}
+
+.SI-DA {
+    display: flex;
+    justify-content: space-around;
+    margin: 13px 100px 0 140px;
+    color: #555555;
+}
+
+.support li {
+    list-style-type:none;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.yi {
+    margin-top: -10px;
+}
+
+.support h4 {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/*第二部分*/
+.service-maintainence {
+    display: flex;
+    justify-content: space-around;
+    color: #555555;
+    margin-top: 0px;
+}
+
+.service-maintainence li {
+    list-style-type:none;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.er {
+    margin-top: 10px;
+}
+
+.service-maintainence h4 {
+    font-size: 12px;
+    color: #333333;
+}
+
+/*第三部分*/
+.resources {
+    display: flex;
+    justify-content: space-around;
+    color: #555555;
+    margin-top: 0px;
+}
+
+.resources li {
+    list-style-type:none;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.san {
+    margin-top: -10px;
+}
+
+.resources h4 {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/*第四部分*/
+.Connect li {
+    list-style-type:none;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.si {
+    margin-top: 10px;
+}
+
+.Connect h4 {
+    font-size: 12px;
+    color: #333333;
+}
+
+/*版权部分*/
+.banquan {
+    font-size: 10px;
+    color: #888888;
+    margin: 10px 0 0px 267px;
+}
+
+.banquan a {
+    margin-right: 30px;
+}
+
+.yinying {
+    height: 20px;
+    background-color: #f2f2f2f2;
+}
+
+
+
+
